@@ -7,7 +7,7 @@
 
 **There is a postman collection in *src/main/resources* that should help you test your endpoints**
 
-**If you use Jax-rs endpoint will be registered automatically if you put them into *src/main/java/com/ge/digital/endpoints***
+**If you use Jax-rs endpoint will be registered automatically if you put them into *src/main/java/com/ge/digital/resources***
 
 **Take your time and Good Luck !!!**
 
