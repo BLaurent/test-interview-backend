@@ -1,0 +1,31 @@
+{
+  "name": "test-interview-backend",
+  "version": "1.0.0",
+  "description": "Simple express app to test candidate node.js skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.build.ge.com/100026625/test-interview-backend.git"
+  },
+  "keywords": [
+    "node.js",
+    "test",
+    "express"
+  ],
+  "author": "Benoit.Laurent@ge.com",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "express": "^4.14.0",
+    "lodash": "^4.14.0",
+    "morgan": "^1.7.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
+  }
+}
