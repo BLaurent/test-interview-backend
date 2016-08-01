@@ -1,0 +1,107 @@
+{
+	"variables": [],
+	"info": {
+		"name": "test-interview",
+		"_postman_id": "d75b4243-3155-d4e2-09e0-5879a317c144",
+		"description": "set of request to test rest endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET http://localhost:8080/version",
+			"request": {
+				"url": "http://localhost:8080/version",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cacheId\": \"e6be04f6-2efd-42ad-9c07-1a0eb802241d\",\n  \"params\": {\n    \"keyType\": \"integer\",\n     \"valueType\": \"string\"\n   }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST http://localhost:8080/items",
+			"request": {
+				"url": "http://localhost:8080/items",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\":[\n    {\n      \"id\": \"37b5962f-12f1-45ba-b4eb-c3217304fc9f\",\n      \"type\": \"Pet\",\n      \"name\": \"Sand\"\n    },\n    {\n      \"id\": \"370a2a4f-89ad-4462-b7d7-ad88d351ea30\",\n      \"type\": \"Pet\",\n      \"name\": \"Luna\"\n    }\n  ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT http://localhost:8080/items/{id}",
+			"request": {
+				"url": "http://localhost:8080/items/37b5962f-12f1-45ba-b4eb-c3217304fc9f",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"cat\",\n  \"name\": \"Sand\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE http://localhost:8080/items/{id}",
+			"request": {
+				"url": "http://localhost:8080/items/37b5962f-12f1-45ba-b4eb-c3217304fc9f",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET http://localhost:8080/items/{id}?type=XXX",
+			"request": {
+				"url": "http://localhost:8080/items/37b5962f-12f1-45ba-b4eb-c3217304fc9f?type=Pet",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"cat\",\n  \"name\": \"Sand\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET http://localhost:8080/items/{id}?type=XXX&name=YYY",
+			"request": {
+				"url": "http://localhost:8080/items/37b5962f-12f1-45ba-b4eb-c3217304fc9f?type=Pet&name=Luna",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"cat\",\n  \"name\": \"Sand\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
